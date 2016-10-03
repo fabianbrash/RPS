@@ -1,4 +1,25 @@
-﻿Clear-Host
+﻿
+#Filename:            VMAutomation_IIS.ps1
+#Author:              Fabian Brash
+#Date:                09-26-2016
+#Modified:            010-03-2016
+#Purpose:             Deploy IIS inside of a running VM
+
+
+
+<#________   ________   ________      
+|\   __  \ |\   __  \ |\   ____\     
+\ \  \|\  \\ \  \|\  \\ \  \___|_    
+ \ \   _  _\\ \   ____\\ \_____  \   
+  \ \  \\  \|\ \  \___| \|____|\  \  
+   \ \__\\ _\ \ \__\      ____\_\  \ 
+    \|__|\|__| \|__|     |\_________\
+                         \|_________|#>
+                                     
+
+
+
+Clear-Host
 
 try
     {

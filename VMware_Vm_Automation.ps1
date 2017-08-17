@@ -63,6 +63,7 @@ Write-Verbose -Message "Beginning deployment of VM..." -Verbose
 try{
 
     New-VM -Name $VMName -ResourcePool $TargetCluster -Location $RPS_Folder -Datastore $RPS_DataStore -Template $SourceTemplate -OSCustomizationSpec $SourceCustomization -Description $RPS_Description -ErrorAction Stop
+    Get-NetworkAdapter -VM $VMName | Set-NetworkAdapter -NetworkName $VMNetwork -Confirm:$false
     Start-VM -VM $VMName
     #-RunAsync Do not add to New-Vm command if you want to use Start-VM -VM $myVM command
 }
